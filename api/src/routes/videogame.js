@@ -1,8 +1,10 @@
 const { Router } = require('express');
+const {addVideogame, getVideogames, getVideogameById} = require('../controllers/VideogameController')
+
 const router = Router();
 
-router.get("/")
-router.get("/:id")
-router.post("/add")
+router.get("/", getVideogames)
+router.get("/:id", getVideogameById)
+router.post("/add", addVideogame)
 
 module.exports = router;
