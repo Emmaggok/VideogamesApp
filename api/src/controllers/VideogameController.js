@@ -29,11 +29,8 @@ async function getVideogames(req, res, next){
             order,
             page
         } = req.query
-        //orden pag /filtrado name
-        //name
-        //orden
-        //pag
-        //https://rickandmortyapi.com/api/character/?name=
+
+        
         let apiVideogames
         let dbVideogames
         let allVideogames=[]
@@ -107,7 +104,7 @@ async function getVideogameById(req,res,next){
 
 
 module.exports = {
-    
+
     addVideogame,
     getVideogames,
     getVideogameById
