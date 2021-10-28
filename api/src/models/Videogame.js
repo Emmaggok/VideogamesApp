@@ -18,14 +18,14 @@ module.exports = (sequelize) => {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    launch: {
+    released: {
       type: DataTypes.STRING
     },
     rating: {
       type: DataTypes.FLOAT
     },
     platforms: {
-      type: DataTypes.ARRAY(DataTypes.STRING),
+      type: DataTypes.ARRAY(DataTypes.JSON),
       allowNull: false
     }
   });
