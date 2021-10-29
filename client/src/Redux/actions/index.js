@@ -54,7 +54,7 @@ export const getVideogame = (id)=>{
 
     }
 }
-export const getCharacters = ({page, order, name})=>{
+export const getAllVideogames = ({page, order, name})=>{
     return (dispatch)=>{
         axios.get(`http://localhost:3001/videogames?page=${page?page:1}&order=${order?order:""}&name=${name?name:""}`)
         .then(videogames =>{

@@ -1,0 +1,31 @@
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     background-image: url("https://c.tenor.com/-gkNI0FL3HwAAAAC/video-games-retro.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  
+  .logo {
+    width: 295px;
+    height: 443px;
+    animation-duration: 3s;
+    animation-name: logo;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes logo {
+    50% {
+      width: 295px;
+      height: 443px;
+    }
+  
+    50% {
+      width: 345px;
+      height: 493px;
+    }
+  }
