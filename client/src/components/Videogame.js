@@ -21,7 +21,8 @@ function Character(props) {
 const goToBack = ()=>{
     history.goBack()
 }
-
+    //console.log("videogames", videogame.genres)
+    //let videogames = videogame.genres;
     return (
         <div>
             <button onClick={goToBack}>⏪</button>
@@ -31,7 +32,7 @@ const goToBack = ()=>{
                 <>
                     <img src={videogame.background_image} alt=""/>
                     <p>{videogame.name}</p>
-                    
+                    <p>{videogame.genres[0].name}</p>
                     {videogame.description}
                     <p>{videogame.released}</p>
                     <p>{videogame.rating}</p>

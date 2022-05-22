@@ -74,9 +74,19 @@ async function getVideogames(req, res, next){
             allVideogames = allVideogames.sort((a,b) =>{
                 return a.name.toLowerCase().localeCompare(b.name.toLowerCase())
             })
-        }else{
+        }else if(order === "desc"){
             allVideogames = allVideogames.sort((a,b) =>{
                 return b.name.toLowerCase().localeCompare(a.name.toLowerCase())
+            })
+        }
+        else if (order === "ratingasc"){
+            allVideogames = allVideogames.sort((a,b) =>{
+                return a.rating - b.rating
+            })
+        }
+        else if (order === "ratingdesc"){
+            allVideogames = allVideogames.sort((a,b) =>{
+                return b.rating - a.rating
             })
         }
         //#endregion
